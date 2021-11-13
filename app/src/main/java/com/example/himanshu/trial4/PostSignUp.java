@@ -26,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.Vector;
-
+//PostSign Up
 public class PostSignUp extends AppCompatActivity {
 
     ListView courtList;
@@ -89,7 +89,6 @@ public class PostSignUp extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(PostSignUp.this,Booking.class);
-                        //finish();
                         startActivity(intent);
                     }
                 });

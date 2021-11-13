@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
-
+//Main
 public class Main extends AppCompatActivity {
 
     EditText memail,mpwd;

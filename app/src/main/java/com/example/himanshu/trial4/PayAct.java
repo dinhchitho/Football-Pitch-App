@@ -13,6 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 
 
+//PayAct
 public class PayAct extends AppCompatActivity {
 
     Button pay;
