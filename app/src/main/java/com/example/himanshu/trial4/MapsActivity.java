@@ -14,13 +14,11 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    //final Bundle bundle = getIntent().getExtras();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -30,10 +28,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
         String latitude = PostSignUp.selectedCourt.getLat();
         String longitude = PostSignUp.selectedCourt.getLong();
-        LatLng location = new LatLng(Double.parseDouble(latitude),Double.parseDouble(longitude));
+        LatLng location = new LatLng(Double.parseDouble("15.969003649132292"),Double.parseDouble("108.26292056840309"));
         mMap.addMarker(new MarkerOptions().position(location).title("Marker at Location"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location,18.2f));
     }

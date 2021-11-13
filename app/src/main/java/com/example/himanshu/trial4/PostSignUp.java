@@ -35,9 +35,7 @@ public class PostSignUp extends AppCompatActivity {
     ArrayList<String> list,list1,list2;
     ArrayAdapter<String> adapter;
     Courts courts,court1;
-    //RadioButton bad,foot;
     public static Courts selectedCourt;
-    //RadioGroup ss;
     ImageButton imageButtonB,imageButtonF;
 
     Vector<Courts> cvector1,cvector2;
@@ -195,6 +193,5 @@ public class PostSignUp extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        //super.onBackPressed();
     }
 }

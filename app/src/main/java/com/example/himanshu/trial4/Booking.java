@@ -33,7 +33,6 @@ import java.util.Vector;
 
 public class Booking extends AppCompatActivity {
 
-    //private PaymentParams mPaymentParams;
 
     CalendarView calendarView;
     DatabaseReference dbref ;
